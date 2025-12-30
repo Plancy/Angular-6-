@@ -14,6 +14,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         <a routerLink="/home" routerLinkActive="active">Головна</a>
         <a routerLink="/about" routerLinkActive="active">Про нас</a>
         <a routerLink="/contact" routerLinkActive="active">Контакти</a>
+        <a routerLink="/users" routerLinkActive="active">Користувачі</a>
       </nav>
 
       <main>
@@ -23,7 +24,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   `,
   styles: [`
     .container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
       font-family: Arial, sans-serif;
     }
@@ -35,11 +36,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
       text-align: center;
       border-radius: 10px;
       margin-bottom: 20px;
-    }
-    
-    header h1 {
-      margin: 0;
-      font-size: 2em;
     }
     
     nav {
@@ -58,11 +54,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
       transition: all 0.3s;
     }
     
-    nav a:hover {
-      background: #e0e0e0;
-      transform: translateY(-2px);
-    }
-    
     nav a.active {
       background: #667eea;
       color: white;
@@ -77,5 +68,5 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   `],
 })
 export class App {
-  protected readonly title = signal('Щось цікаве');
+  protected readonly title = signal('щось');
 }
